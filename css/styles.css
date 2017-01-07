@@ -1,0 +1,82 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    color:#E9E9E9;
+    background-color:#222930;
+}
+
+h1 {
+    margin: 10px 25%;
+    padding: 5px 0px;
+    border-bottom:3px solid #4EB1BA;
+    text-align:center;
+}
+
+span{
+    color:#4EB1BA;
+}
+
+
+/*  
+    ****IMPORTANT****
+
+    Use overflow: hidden
+    is the must import when we build a layout with floats
+    because this let us size our <Section> as we want.
+
+    What is overflow:specifies what happens if content overflows an element's box.
+
+    What does hidden attribute do: The overflow is clipped, and the rest of the content will be invisible.
+
+*/
+section{
+    overflow: hidden;
+    margin: 20px 25%;
+    padding: 25px;
+}
+
+aside {
+    width:20%;
+    padding: 10px;
+    padding-bottom:20px;
+    float:left;
+    border: 3px solid #4EB1BA;
+    border-radius:10px;
+}
+
+.main_article {
+    width:65%;
+    margin: 0px 20px;
+    float:left;
+    text-align:center;
+}
+
+footer{
+    overflow:hidden;
+    margin:20px 25%;
+    padding:20px;
+    position:absolute;
+    width:48%;
+    bottom:0;
+}
+
+.foot_one, .foot_two, .foot_three {
+    float:left;
+    width:33%;
+}
+
+.foot_two {
+    text-align:center;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+.foot_three {
+    text-align:right;
+}
